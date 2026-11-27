@@ -36,3 +36,8 @@ Entradas nuevas **arriba**. No se reescriben las anteriores.
 - Aprendí: …
 - Pendiente: …
 ```
+
+### Clase 2 · Tu entorno y tu producto · 2026-11-27
+- Entregable: ficha de la idea HuecoCero en `docs/ficha-idea.md`, a partir de una entrevista de 6 preguntas, y sección "Producto" de `CLAUDE.md` actualizada; fusionado en `main` con el PR #1.
+- Decisiones: se descartó la idea de cosmética. El problema es recuperar los cupos cancelados a última hora en canchas, pilates y box, y la métrica es la tasa de recuperación de turnos cancelados (objetivo por definir).
+- Pendiente: completar Estado actual y Mi perfil de este archivo. El siguiente paso es la clase 3 (PRD).
