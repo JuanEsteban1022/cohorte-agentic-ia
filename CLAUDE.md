@@ -3,8 +3,10 @@
 > Plantilla inicial. En la **clase 2** la completas con tu producto y la vas mejorando en cada clase.
 
 ## Producto
-- Nombre: Turnos
-- En una frase: Evita que se crucen los horarios de las citas que hoy se agendan por WhatsApp, para dueños de peluquerías y consultorios pequeños (1 a 3 empleados): el cliente reserva un horario libre desde un enlace y el dueño ve su agenda del día.
+- Nombre: HuecoCero (tentativo)
+- En una frase: Recupera los ingresos que se pierden por cancelaciones de último momento y no-shows reasignando automáticamente cada cupo cancelado a una lista de espera priorizada, para dueños o administradores de centros con cupos por horario (canchas sintéticas, estudios de pilates, box de entrenamiento) que reciben entre 15 y 80 reservas diarias y hoy gestionan su agenda por WhatsApp, Excel o cuaderno.
+- Núcleo: la reasignación automática de cancelaciones. El bloqueo en tiempo real y las penalizaciones son secundarios.
+- Métrica: tasa de recuperación de turnos cancelados (cupos cancelados con menos de 24 h de anticipación que se reasignan antes de la hora de inicio). Objetivo por definir tras medir la línea base del primer mes.
 - Fuentes de verdad, en este orden: `docs/ficha-idea.md` → `docs/prd.md` → `specs/` → `docs/adr/`.
 
 ## Cómo trabajamos
