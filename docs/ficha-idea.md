@@ -34,8 +34,6 @@ Reciben entre **15 y 80 reservas diarias** y hoy gestionan su agenda por WhatsAp
 
 Una plataforma de reservas por bloques horarios que **reasigna automáticamente las cancelaciones a una lista de espera priorizada**, bloquea los cupos en tiempo real para evitar dobles asignaciones y aplica reglas de penalización por incumplimiento.
 
-**Núcleo: la reasignación automática de cancelaciones a la lista de espera priorizada.** Ataca directamente el dolor principal, que es la pérdida de ingresos por cupos vacíos.
-
 **Capacidades secundarias:**
 
 - **Bloqueo en tiempo real.** Es higiene técnica básica: cualquier base de datos con restricciones únicas o un calendario simple ya lo resuelve. No justifica por sí solo un producto nuevo.
