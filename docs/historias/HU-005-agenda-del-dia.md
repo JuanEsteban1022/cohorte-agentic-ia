@@ -16,7 +16,8 @@ Estados oficiales del cupo (`docs/prd.md` §7): libre · reservado · ofertado �
 
 - Un cupo "ofertado" muestra a quién se le ofreció y hasta qué hora vence el plazo, para que Carlos le avise por WhatsApp.
 - Un cupo "reasignado" es el que se llenó con una oferta aceptada (BR-OF-07).
-- Las canchas y los bloques horarios vienen del seed.
+- Las canchas y los bloques horarios vienen del seed; los bloques duran 1 hora.
+- En el MVP la agenda no muestra la lista de espera de cada cupo.
 
 ## Criterios de aceptación
 
@@ -47,4 +48,4 @@ Escenario: Consultar un día sin bloques configurados
 
 ## Preguntas abiertas
 
-- ¿La agenda muestra también la lista de espera de cada cupo?
+- Ninguna por ahora.

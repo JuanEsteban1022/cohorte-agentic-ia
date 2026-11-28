@@ -6,12 +6,12 @@ Memoria del proyecto entre clases. El agente lee la sección **Estado actual** a
 
 | Campo | Valor |
 |---|---|
-| Producto | _(nombre de tu producto)_ |
-| Clase en curso | 2 · Tu entorno y tu producto |
-| Última clase completada | — |
-| Fecha | _(AAAA-MM-DD)_ |
-| Siguiente paso | Completar la ficha de la idea |
-| Progreso | 1 / 7 |
+| Producto | HuecoCero |
+| Clase en curso | 3 · Tu PRD con IA |
+| Última clase completada | 2 · Tu entorno y tu producto |
+| Fecha | 2026-11-27 |
+| Siguiente paso | Abrir el PR de `clase-03-prd` y pasar a la clase 4 (spec y arquitectura) |
+| Progreso | 2 / 7 |
 
 ---
 

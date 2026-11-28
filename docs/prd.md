@@ -86,9 +86,11 @@ Clasificación MoSCoW de las funcionalidades candidatas:
 **Decisiones del MVP:**
 
 - **Operación:** el MVP lo opera el dueño. Registra reservas, lista de espera y cancelaciones a nombre de sus clientes.
-- **Configuración:** las canchas y los bloques horarios vienen precargados en la base de datos (seed).
-- **Orden de la lista de espera:** FIFO estricto por orden de llegada (`created_at` ascendente).
-- **Reasignación:** el cupo se ofrece al primero de la lista, con **15 minutos** para aceptar o rechazar. Si falta menos de 1 hora para el turno, el plazo baja a **5 minutos**. Si se rechaza o vence el plazo, la oferta pasa automáticamente al siguiente.
+- **Configuración:** las canchas y los bloques horarios vienen precargados en la base de datos (seed). Los bloques duran **1 hora**.
+- **Orden de la lista de espera:** FIFO estricto por orden de llegada (BR-LE-02).
+- **Reasignación:** el cupo se ofrece al primero de la lista con el plazo que define BR-OF-02 (15 min, 5 min si falta menos de 1 h, y nunca después de la hora de inicio). Si se rechaza o vence, pasa al siguiente (BR-OF-04). Si la lista se agota, el cupo vuelve a "libre" (BR-OF-05).
+- **Mensajes de error:** los textos que aparecen en los escenarios de las historias son ilustrativos y se ajustan en el diseño.
+- **Agenda:** en el MVP no muestra la lista de espera de cada cupo.
 - **Aviso y respuesta:** Carlos avisa la oferta al cliente por WhatsApp a mano y acepta o rechaza en su nombre en la app.
 - **Cupo con oferta en curso:** queda en estado "ofertado" y **no se puede reservar directamente**, para no saltarse la lista de espera.
 
@@ -109,8 +111,11 @@ Clasificación MoSCoW de las funcionalidades candidatas:
 | BR-RES-03 | No se puede reservar un cupo "ofertado" (no se salta la lista de espera). |
 | BR-RES-04 | Una cancelación hecha con menos de 24 h de anticipación queda marcada como "tardía" y cuenta para la métrica. |
 | BR-RES-05 | No se puede cancelar una reserva ya "cancelada". |
+| BR-RES-06 | No se puede cancelar una reserva después de su hora de inicio. |
 | BR-LE-01 | Solo un cupo "reservado" admite lista de espera. |
 | BR-LE-02 | La lista de espera sigue FIFO estricto (`created_at` ascendente). |
+| BR-LE-03 | Un cliente no puede estar dos veces en la misma lista de espera, ni en la lista de un cupo que él mismo tiene reservado. |
+| BR-LE-04 | Un cliente sí puede estar en la lista de un cupo aunque tenga otra reserva a la misma hora en otra cancha; Carlos lo decide al avisarle. |
 | BR-OF-01 | Al cancelar una reserva, el cupo se ofrece al primero de la lista y pasa a "ofertado". |
 | BR-OF-02 | El plazo de la oferta es de 15 min, o de 5 min si falta menos de 1 h para el turno, y nunca pasa de la hora de inicio: si termina después, se recorta a esa hora. |
 | BR-OF-03 | El dueño solo puede aceptar o rechazar en nombre del titular de la oferta. |

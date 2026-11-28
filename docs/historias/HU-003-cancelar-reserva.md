@@ -16,6 +16,7 @@ Reglas del catálogo (`docs/prd.md` §7):
 
 - **BR-RES-04:** una cancelación con menos de 24 h queda marcada como "tardía" y cuenta para la métrica.
 - **BR-RES-05:** no se puede cancelar una reserva ya "cancelada".
+- **BR-RES-06:** no se puede cancelar una reserva después de su hora de inicio.
 
 Otras notas:
 
@@ -40,8 +41,14 @@ Escenario: Intentar cancelar una reserva ya cancelada (BR-RES-05)
   Dado que la reserva de Felipe de la "Cancha 1" del 2 de diciembre de 2026 a las 19:00 está "cancelada"
   Cuando Carlos intenta cancelar de nuevo esa reserva
   Entonces se rechaza con el mensaje "Esta reserva ya fue cancelada"
+
+Escenario: Intentar cancelar después de la hora de inicio (BR-RES-06)
+  Dado que la "Cancha 1" el 2 de diciembre de 2026 de 19:00 a 20:00 está "reservado" a nombre de Felipe
+  Cuando Carlos intenta cancelar la reserva de Felipe el 2 de diciembre de 2026 a las 19:10
+  Entonces se rechaza con el mensaje "El turno ya empezó: no se puede cancelar"
+  Y la reserva de Felipe sigue "activa"
 ```
 
 ## Preguntas abiertas
 
-- ¿Hay una hora límite para cancelar (por ejemplo, no se puede cancelar después de la hora de inicio)?
+- Ninguna por ahora.

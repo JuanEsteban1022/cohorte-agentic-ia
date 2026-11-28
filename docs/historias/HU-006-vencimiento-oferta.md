@@ -17,7 +17,7 @@ Reglas del catálogo (`docs/prd.md` §7):
 - **BR-OF-02:** plazo de 15 min, o de 5 min si falta menos de 1 h, recortado a la hora de inicio.
 - **BR-OF-04:** si vence, la oferta pasa automáticamente al siguiente.
 - **BR-OF-05:** si la lista se agota, el cupo vuelve a "libre".
-- **BR-OF-06:** una oferta "vencida" no se puede aceptar.
+- **BR-OF-06:** una oferta "vencida" no se puede aceptar, aunque el cliente haya dicho que sí por WhatsApp mientras Carlos leía el mensaje.
 
 ## Criterios de aceptación
 
@@ -59,5 +59,4 @@ Escenario: Intentar aceptar una oferta vencida (BR-OF-06)
 
 ## Preguntas abiertas
 
-- ¿Qué pasa si el plazo vence mientras Carlos está leyendo la respuesta del cliente por WhatsApp?
 - Las pruebas necesitan controlar el reloj ("cuando son las 15:15"). El diseño debe permitir inyectar la hora (clase 4 o 5).
