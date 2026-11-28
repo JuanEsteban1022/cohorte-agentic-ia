@@ -6,12 +6,12 @@ Memoria del proyecto entre clases. El agente lee la sección **Estado actual** a
 
 | Campo | Valor |
 |---|---|
-| Producto | _(nombre de tu producto)_ |
-| Clase en curso | 2 · Tu entorno y tu producto |
-| Última clase completada | — |
-| Fecha | _(AAAA-MM-DD)_ |
-| Siguiente paso | Completar la ficha de la idea |
-| Progreso | 1 / 7 |
+| Producto | HuecoCero |
+| Clase en curso | 3 · Tu PRD con IA |
+| Última clase completada | 2 · Tu entorno y tu producto |
+| Fecha | 2026-11-27 |
+| Siguiente paso | Abrir el PR de `clase-03-prd` y pasar a la clase 4 (spec y arquitectura) |
+| Progreso | 2 / 7 |
 
 ---
 
@@ -36,6 +36,11 @@ Entradas nuevas **arriba**. No se reescriben las anteriores.
 - Aprendí: …
 - Pendiente: …
 ```
+
+### Clase 3 · Tu PRD con IA · 2026-11-27
+- Entregable: `docs/prd.md` con 7 secciones, 6 historias en `docs/historias/` con 30 escenarios Gherkin y `docs/spec-review.md` (nota C en las dos olas; solo falta la arquitectura).
+- Decisiones: el MVP lo opera el dueño (registra, avisa por WhatsApp y acepta en nombre del cliente). Catálogo de 17 reglas BR y estados oficiales. Se partió HU-004 en HU-004 y HU-006.
+- Pendiente: clase 4 (spec viva y arquitectura: modelo de datos, vencimiento de ofertas, reloj inyectable, concurrencia).
 
 ### Clase 2 · Tu entorno y tu producto · 2026-11-27
 - Entregable: ficha de la idea HuecoCero en `docs/ficha-idea.md`, a partir de una entrevista de 6 preguntas, y sección "Producto" de `CLAUDE.md` actualizada; fusionado en `main` con el PR #1.
