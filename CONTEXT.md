@@ -37,6 +37,11 @@ Entradas nuevas **arriba**. No se reescriben las anteriores.
 - Pendiente: …
 ```
 
+### Clase 3 · Tu PRD con IA · 2026-11-27
+- Entregable: `docs/prd.md` con 7 secciones, 6 historias en `docs/historias/` con 30 escenarios Gherkin y `docs/spec-review.md` (nota C en las dos olas; solo falta la arquitectura).
+- Decisiones: el MVP lo opera el dueño (registra, avisa por WhatsApp y acepta en nombre del cliente). Catálogo de 17 reglas BR y estados oficiales. Se partió HU-004 en HU-004 y HU-006.
+- Pendiente: clase 4 (spec viva y arquitectura: modelo de datos, vencimiento de ofertas, reloj inyectable, concurrencia).
+
 ### Clase 2 · Tu entorno y tu producto · 2026-11-27
 - Entregable: ficha de la idea HuecoCero en `docs/ficha-idea.md`, a partir de una entrevista de 6 preguntas, y sección "Producto" de `CLAUDE.md` actualizada; fusionado en `main` con el PR #1.
 - Decisiones: se descartó la idea de cosmética. El problema es recuperar los cupos cancelados a última hora en canchas, pilates y box, y la métrica es la tasa de recuperación de turnos cancelados (objetivo por definir).
